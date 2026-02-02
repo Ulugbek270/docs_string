@@ -9,18 +9,15 @@ Analyze the following Uzbek (Cyrillic) document.
 
 Return ONLY valid JSON. No explanations.
 
-Extract ONLY what is explicitly written in the text.
-If a field is missing or unclear, use null. Do NOT guess.
-
 JSON fields:
-- author: person name if explicitly stated
+- author: person name 
+- doc_num: number of document (ex: 01/14-1-329-son)
 - from_org: organization the document is sent from, if explicitly stated
-- doc_author: organization that issued the document, if explicitly stated
-- date: copy exactly as written; do not normalize or infer
+- date: copy exactly as written; do not normalize or infer()
 - context: main body text only (no headers, signatures, stamps)
-
-If the document text is empty, return all fields as null except context = "".
-
-
-
+- adres: for ex(100170, O’zbekiston Respublikasi, Toshkent shahri,
+Mirzo-Ulug’bek tumani, Mustaqillik shoh ko’chasi, 107.)
+- phone_number:
+- email
+- code_doc: for ex: (Ҳужжат коди: MM87587866)
 """
