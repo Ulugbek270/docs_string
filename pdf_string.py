@@ -30,5 +30,5 @@ class PDFTextExtractor:
         return full_text
 
 extractor = PDFTextExtractor()
-text = extractor.extract_text("./doc1.pdf")
+text = extractor.extract_text("./doc2.pdf")
 print(text)
