@@ -33,7 +33,7 @@ TEXT:
 try:
 
     stdin, stdout, stderr = client.exec_command(
-        'OLLAMA_NO_STREAM=1 ollama run qwen2.5:7b '
+        'ollama run qwen2.5:7b '
         f'{prompt}' ,
 
         get_pty=True
