@@ -80,7 +80,7 @@ Return only JSON, no markdown, no explanation."""
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Ollama error: {str(e)}")
 
-@app.post("/extract", response_model=DocumentOutput)
+@app.post("/extract", response_model=Response_Json)
 async def extract_from_pdf(file: UploadFile = File(...)):
     
     # if not file.filename.endswith('.pdf'):
