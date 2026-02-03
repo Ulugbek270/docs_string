@@ -2,8 +2,8 @@ import uvicorn
 from fastapi import FastAPI, File, UploadFile, HTTPException
 import subprocess
 import json
-from models import DocumentOutput
-from pdf_text_extractor import PDFTextExtractor
+from src.models import Response_Json
+from src.scripts.pdf_text_extractor import PDFTextExtractor
 app = FastAPI()
 
 

@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-class DocumentOutput(BaseModel):
+class Response_Json(BaseModel):
     author: str | None = None
     doc_num: str | None = None
     sender: str | None = None

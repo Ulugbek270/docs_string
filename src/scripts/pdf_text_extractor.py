@@ -17,7 +17,6 @@ class PDFTextExtractor:
         return len(text) < 50
 
     def extract_text_from_bytes(self, pdf_bytes: bytes) -> str:
-        """Extract text from PDF bytes, using OCR for scanned pages"""
         # Save bytes to temporary file
         with tempfile.NamedTemporaryFile(delete=False, suffix='.pdf') as tmp_file:
             tmp_file.write(pdf_bytes)
