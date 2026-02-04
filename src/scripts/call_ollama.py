@@ -1,8 +1,6 @@
 
 import subprocess
 import json
-from src.models.response import Response_Json
-import logging
 
 
 

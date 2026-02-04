@@ -1,16 +1,13 @@
-import uvicorn
 import pytesseract
-# from pdf_string import PDFTextExtractor
 import fitz
-from fastapi import FastAPI, File, UploadFile, HTTPException
-from pydantic import BaseModel
-import subprocess
-import json
 import io
 import pytesseract
 from PIL import Image
 import tempfile
 import os
+
+
+
 class PDFTextExtractor:
     def is_scanned_page(self, page) -> bool:
         text = page.get_text().strip()
